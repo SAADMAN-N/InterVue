@@ -1,8 +1,5 @@
-// import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
-// import { z } from "zod";
-//
-import {CreateAssistantDTO} from "@vapi-ai/web/api";
-import {z} from "zod";
+import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
+import { z } from "zod";
 
 export const mappings = {
   "react.js": "react",
@@ -103,7 +100,7 @@ export const mappings = {
 export const interviewer: CreateAssistantDTO = {
   name: "Interviewer",
   firstMessage:
-    "Hello! Thank you for taking the time to speak with me today. I'm excited to learn more about you and your experience.",
+      "Hello! Thank you for taking the time to speak with me today. I'm excited to learn more about you and your experience.",
   transcriber: {
     provider: "deepgram",
     model: "nova-2",
@@ -207,28 +204,27 @@ export const interviewCovers = [
   "/yahoo.png",
 ];
 
-
 export const dummyInterviews: Interview[] = [
-    {
-        id: "1",
-        userId: "user1",
-        role: "Frontend Developer",
-        type: "Technical",
-        techstack: ["React", "Typescript", "Next.js", "Tailwind CSS"],
-        level: "Juinor",
-        questions: ["What is React?"],
-        finalized: false,
-        createdAt: "2025-03-15T10:00:00Z",
-    },
-    {
-        id: "2",
-        userId: "user2",
-        role: "Full Stack Developer",
-        type: "Mixed",
-        techstack: ["Node.js", "Express", "MongoDB", "React"],
-        level: "Senior",
-        questions: ["What is Node.js?"],
-        finalized: false,
-        createdAt: "2025-03-14T10:30:00Z",
-    }
+  {
+    id: "1",
+    userId: "user1",
+    role: "Frontend Developer",
+    type: "Technical",
+    techstack: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+    level: "Junior",
+    questions: ["What is React?"],
+    finalized: false,
+    createdAt: "2024-03-15T10:00:00Z",
+  },
+  {
+    id: "2",
+    userId: "user1",
+    role: "Full Stack Developer",
+    type: "Mixed",
+    techstack: ["Node.js", "Express", "MongoDB", "React"],
+    level: "Senior",
+    questions: ["What is Node.js?"],
+    finalized: false,
+    createdAt: "2024-03-14T15:30:00Z",
+  },
 ];
